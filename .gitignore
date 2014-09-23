@@ -4,6 +4,7 @@ toolchain-*
 libpng-*
 expat-*
 fribidi-*
+SDL-*
 
 # Created by http://www.gitignore.io
 

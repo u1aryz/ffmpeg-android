@@ -33,7 +33,8 @@ make clean
 --disable-ffserver \
 --enable-version3 \
 --enable-hardcoded-tables \
---disable-ffplay \
+--enable-outdev=sdl \
+--enable-ffplay \
 --disable-ffprobe \
 --enable-gpl \
 --enable-yasm \
@@ -44,7 +45,7 @@ make clean
 --prefix="${2}/build/${1}" \
 --extra-cflags="-I${TOOLCHAIN_PREFIX}/include $CFLAGS" \
 --extra-ldflags="-L${TOOLCHAIN_PREFIX}/lib $LDFLAGS" \
---extra-libs="-lpng -lexpat -lm" \
+--extra-libs="-lpng -lexpat" \
 --extra-cxxflags="$CXX_FLAGS" || exit 1
 
 make -j${NUMBER_OF_CORES} && make install || exit 1
