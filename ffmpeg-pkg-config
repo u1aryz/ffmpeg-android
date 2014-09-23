@@ -12,10 +12,6 @@ case $1 in
     echo $(pkg-config --cflags $pkg_name)
     ;;
   --libs)
-    if [ $2 = "sdl" ]; then
-        echo "$(pkg-config --libs $pkg_name) -Wl,--unresolved-symbols,ignore-in-object-files"
-        exit 0
-    fi
     echo $(pkg-config --libs $pkg_name)
     ;;
   *)

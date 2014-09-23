@@ -21,6 +21,7 @@ esac
   --disable-shared \
   --enable-static \
   --disable-joystick \
+  --enable-cdrom=no \
   --enable-video-fbcon=no \
   --enable-video-directfb=no \
   --with-x=no \
