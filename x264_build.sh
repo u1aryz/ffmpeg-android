@@ -15,8 +15,6 @@ case $1 in
   ;;
 esac
 
-echo $CFLAGS
-
 ./configure \
   --cross-prefix="$CROSS_PREFIX" \
   --sysroot="$NDK_SYSROOT" \
