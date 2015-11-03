@@ -2,7 +2,7 @@
 
 . abi_settings.sh $1 $2 $3
 
-pushd ffmpeg
+pushd FFmpeg
 
 case $1 in
   armeabi-v7a | armeabi-v7a-neon)
