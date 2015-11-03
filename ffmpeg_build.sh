@@ -23,7 +23,7 @@ make clean
 --enable-runtime-cpudetect \
 --sysroot="$NDK_SYSROOT" \
 --enable-pic \
---enable-libx264 \
+--enable-libopenh264 \
 --enable-libass \
 --enable-libfreetype \
 --enable-libfribidi \
