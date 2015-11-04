@@ -5,6 +5,7 @@
 pushd openh264
 
 make clean
+git clean -fdx .
 
 case $1 in
 	armeabi-v7a | armeabi-v7a-neon)
