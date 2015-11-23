@@ -18,6 +18,6 @@ case $1 in
 	;;
 esac
 
-make -j${NUMBER_OF_CORES} OS=android PREFIX=${TOOLCHAIN_PREFIX} NDKROOT=${ANDROID_NDK_ROOT_PATH} TARGET=android-15 ARCH=${ARCH} APP_ABI=${APP_ABI} install-static || exit 1
+make -j${NUMBER_OF_CORES} OS=android PREFIX=${TOOLCHAIN_PREFIX} NDKROOT=${ANDROID_NDK_ROOT_PATH} TARGET=android-15 ARCH=${ARCH} APP_ABI=${APP_ABI} install-shared || exit 1
 
 popd

@@ -35,11 +35,9 @@ make clean
 --enable-hardcoded-tables \
 --disable-ffplay \
 --disable-ffprobe \
---enable-gpl \
 --enable-yasm \
 --disable-doc \
---disable-shared \
---enable-static \
+--enable-shared \
 --pkg-config="${2}/ffmpeg-pkg-config" \
 --prefix="${2}/build/${1}" \
 --extra-cflags="-I${TOOLCHAIN_PREFIX}/include $CFLAGS" \
